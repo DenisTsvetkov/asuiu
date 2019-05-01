@@ -1,0 +1,37 @@
+npx sequelize model:generate --name Blacklist --attributes id_client:integer
+
+npx sequelize model:generate --name CreditHistory --attributes id_client:integer,bank_name:string,credit_amount:decimal,time:bigint, delay:bigint,current_state:string
+
+npx sequelize model:generate --name Client --attributes inn:bigint(12)
+
+npx sequelize model:generate --name Passport --attributes name:string,middle_name:string,surname:string,sex:string,birthday:date,registration_date:string
+
+npx sequelize model:generate --name DriverLicense --attributes name:string,middle_name:string,surname:string,sex:string,birthday:date,registration_date:string,category:string
+
+npx sequelize model:generate --name ClientProfile --attributes id_client:integer,salary:decimal,phone:string(11),statement:boolean
+
+npx sequelize model:generate --name ClientDocument --attributes id_client:integer,series:string,number:string,id_document:integer,document_type:string
+
+npx sequelize model:generate --name InternationalPassport --attributes name:string,middle_name:string,surname:string,sex:string,birthday:date,registration_date:string
+
+npx sequelize model:generate --name Request --attributes id_costumer_profile:integer,request_credit_amount:decimal,id_credit_type:integer
+
+npx sequelize model:generate --name Credit-type --attributes name_credit:string,condition:string,rate:decimal,time:date
+
+npx sequelize model:generate --name Indicator --attributes total_score:real
+
+npx sequelize model:generate --name Handbook --attributes name:string
+
+npx sequelize model:generate --name Handbook-items --attributes id_handbook:integer,value:string
+
+npx sequelize model:generate --name Scores --attributes id_item:integer,score:double
+
+npx sequelize model:generate --name Request-status --attributes id_request:integer,status:integer
+
+npx sequelize model:generate --name Request-graph --attributes id_begin_status:integer,id_end_status:integer
+
+npx sequelize model:generate --name Rist-class --attributes name_risk:string,score_from:integer,score_before: integer
+
+npx sequelize model:generate --name Formula --attributes name:string,formula:string
+
+npx sequelize model:generate --name Handbook-client-items --attributes id_client:integer,id_handbook_item:integer

@@ -1,0 +1,175 @@
+ <!-- Textual inputs start -->
+<div class="col-8 mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="header-title">Добавление клиента</h4>
+            <div class="form-group">
+                <label for="inn" class="col-form-label">ИНН:</label>
+                <input class="form-control" type="text" placeholder="ИНН" id="inn">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-8 mt-2">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="header-title">Паспортные данные</h4>
+            <div class="form-group">
+                <label for="client-name" class="col-form-label">Имя:</label>
+                <input class="form-control" type="text" placeholder="Имя" id="client-name">
+            </div>
+            <div class="form-group">
+                <label for="client-middle-name" class="col-form-label">Отчество:</label>
+                <input class="form-control" type="text" placeholder="Отчество" id="client-middle-name">
+            </div>
+            <div class="form-group">
+                <label for="client-surname" class="col-form-label">Фамилия:</label>
+                <input class="form-control" type="text" placeholder="Фамилия" id="client-surname">
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class="col-form-label">Пол:</label>
+                    <select class="form-control">
+                        <option>Не указан</option>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                </div>
+            </div>
+            <div class="passport mb-3">
+                <label class="col-form-label">Серия и номер паспорта:</label>
+                <div class="form-row">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-serial">Серия</label>
+                        <input type="text" class="form-control" id="passport-serial" placeholder="Серия">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-number">Номер</label>
+                        <input type="text" class="form-control" id="passport-number" placeholder="Номер">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="birthday col-sm-3">
+                    <label for="passport-birthday" class="col-form-label">Дата рождения:</label>
+                    <input class="form-control" type="date" placeholder="Дата рождения" id="passport-birthday">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-8 mt-4 mb-4">
+    <button type="button" class="btn btn-primary btn-xs mb-3" id="btn-add-internation-passport">Добавить загран.паспорт</button>
+    <div class="card d-none">
+        <div class="card-body">
+            <h4 class="header-title">Загран.паспорт</h4>
+            <div class="form-group">
+                <label for="client-name" class="col-form-label">Имя:</label>
+                <input class="form-control" type="text" placeholder="Имя" id="client-name">
+            </div>
+            <div class="form-group">
+                <label for="client-middle-name" class="col-form-label">Отчество:</label>
+                <input class="form-control" type="text" placeholder="Отчество" id="client-middle-name">
+            </div>
+            <div class="form-group">
+                <label for="client-surname" class="col-form-label">Фамилия:</label>
+                <input class="form-control" type="text" placeholder="Фамилия" id="client-surname">
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class="col-form-label">Пол:</label>
+                    <select class="form-control">
+                        <option>Не указан</option>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                </div>
+            </div>
+            <div class="passport mb-3">
+                <label class="col-form-label">Серия и номер паспорта:</label>
+                <div class="form-row">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-serial">Серия</label>
+                        <input type="text" class="form-control" id="passport-serial" placeholder="Серия">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-number">Номер</label>
+                        <input type="text" class="form-control" id="passport-number" placeholder="Номер">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="birthday col-sm-3">
+                    <label for="passport-birthday" class="col-form-label">Дата рождения:</label>
+                    <input class="form-control" type="date" placeholder="Дата рождения" id="passport-birthday">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-8">
+    <button type="button" class="btn btn-primary btn-xs mb-3">Добавить водительское удостоверение</button>
+    <div class="card d-none">
+        <div class="card-body">
+            <h4 class="header-title">Водительское удостоверение</h4>
+            <div class="form-group">
+                <label for="client-name" class="col-form-label">Имя:</label>
+                <input class="form-control" type="text" placeholder="Имя" id="client-name">
+            </div>
+            <div class="form-group">
+                <label for="client-middle-name" class="col-form-label">Отчество:</label>
+                <input class="form-control" type="text" placeholder="Отчество" id="client-middle-name">
+            </div>
+            <div class="form-group">
+                <label for="client-surname" class="col-form-label">Фамилия:</label>
+                <input class="form-control" type="text" placeholder="Фамилия" id="client-surname">
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class="col-form-label">Пол:</label>
+                    <select class="form-control">
+                        <option>Не указан</option>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                </div>
+            </div>
+            <div class="passport mb-3">
+                <label class="col-form-label">Серия и номер паспорта:</label>
+                <div class="form-row">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-serial">Серия</label>
+                        <input type="text" class="form-control" id="passport-serial" placeholder="Серия">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="passport-number">Номер</label>
+                        <input type="text" class="form-control" id="passport-number" placeholder="Номер">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="birthday col-sm-3">
+                    <label for="passport-birthday" class="col-form-label">Дата рождения:</label>
+                    <input class="form-control" type="date" placeholder="Дата рождения" id="passport-birthday">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class="col-form-label">Категория прав:</label>
+                    <select class="form-control">
+                        <option>Не указан</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-3">
+    <button type="button" class="btn btn-success mb-3"><i class="fa fa-check-circle"></i> Отправить</button>
+</div>
+
+<!-- Textual inputs end -->
